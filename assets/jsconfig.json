@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": "https://goldmaple.github.io/",
+  "paths": {
+   "*": [
+    "..\\themes\\hugo-theme-stack\\assets\\*"
+   ]
+  }
+ }
+}
