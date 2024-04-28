@@ -6,10 +6,25 @@
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-31T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/23-years-new-year/</loc>
+    <lastmod>2023-12-31T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-31T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2023-12-31T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2023-12-31T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-12-31T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2023-12-31T12:00:00+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/css/</loc>
     <lastmod>2023-09-07T00:00:00+00:00</lastmod>
@@ -23,13 +38,7 @@
     <loc>http://localhost:1313/p/markdown-syntax-guide/</loc>
     <lastmod>2023-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/syntax/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/themes/</loc>

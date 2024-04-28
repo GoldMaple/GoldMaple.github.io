@@ -6,7 +6,15 @@
         <description>Recent content in Categories on GoldMaple 🌌 珊瑚阁</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 07 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 31 Dec 2023 12:00:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>日常随笔</title>
+        <link>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</link>
+        <pubDate>Sun, 31 Dec 2023 12:00:00 +0100</pubDate>
+        
+        <guid>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Syntax</title>
         <link>http://localhost:1313/categories/syntax/</link>
         <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
@@ -28,7 +36,19 @@
         <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/example-category/</guid>
-        <description></description>
+        <description>&lt;p&gt;title: 日常随笔
+description: A description of this category
+image:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;badge-style&#34;&gt;
+    &lt;a href=&#34;#badge-style&#34;&gt;#&lt;/a&gt;
+    Badge style
+&lt;/h1&gt;&lt;h2 id=&#34;color-fff&#34;&gt;
+    &lt;a href=&#34;#color-fff&#34;&gt;#&lt;/a&gt;
+    style:
+background: &amp;ldquo;#2a9d8f&amp;rdquo;
+color: &amp;ldquo;#fff&amp;rdquo;
+&lt;/h2&gt;</description>
         </item>
         
     </channel>
