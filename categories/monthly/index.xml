@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>月记 on GoldMaple 🌌 珊瑚阁</title>
-        <link>http://localhost:1313/categories/%E6%9C%88%E8%AE%B0/</link>
+        <link>http://localhost:1313/categories/monthly/</link>
         <description>Recent content in 月记 on GoldMaple 🌌 珊瑚阁</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="http://localhost:1313/categories/%E6%9C%88%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+        <language>zh-cn</language><atom:link href="http://localhost:1313/categories/monthly/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
