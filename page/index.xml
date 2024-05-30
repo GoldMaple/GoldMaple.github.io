@@ -1,45 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Pages on GoldMaple 🌌 珊瑚阁</title>
-        <link>http://localhost:1313/page/</link>
-        <description>Recent content in Pages on GoldMaple 🌌 珊瑚阁</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Archives</title>
-        <link>http://localhost:1313/archives/</link>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>About</title>
-        <link>http://localhost:1313/about/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/about/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;世界公民现驻西非备润&lt;/li&gt;
-&lt;li&gt;infp/j&lt;/li&gt;
-&lt;li&gt;相比人类更喜欢🐙&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄°&lt;/p&gt;
-&lt;p&gt;18-23岁倒霉得数次寻死所以会大惊小怪一些幸福&lt;/p&gt;
-&lt;p&gt;从小物质匮乏、穷人乍富所以虚荣心和物欲极强&lt;/p&gt;
-&lt;p&gt;城郊结合部做题家，跑题大王尽显草根本色&lt;/p&gt;
-&lt;p&gt;你不必成功、有趣，但要尽量坦率地面对这段人生&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>http://localhost:1313/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/search/</guid>
-        <description></description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>Pages on GoldMaple</title>
+    <link>http://localhost:1313/page/</link>
+    <description>Recent content in Pages on GoldMaple</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archives</title>
+      <link>http://localhost:1313/archives/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archives/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>我想死，你的声音让我想化成灰。 人是一种生物，我希望自己是枫。 世界公民现驻西非备润 infp/j 相比人类更喜欢🐙 ┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

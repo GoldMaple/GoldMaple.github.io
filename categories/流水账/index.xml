@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>流水账 on GoldMaple</title>
+    <link>http://localhost:1313/categories/%E6%B5%81%E6%B0%B4%E8%B4%A6/</link>
+    <description>Recent content in 流水账 on GoldMaple</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 May 2024 01:11:42 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E6%B5%81%E6%B0%B4%E8%B4%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>五月：非洲的雨季</title>
+      <link>http://localhost:1313/2024/%E4%BA%94%E6%9C%88%E9%9D%9E%E6%B4%B2%E7%9A%84%E9%9B%A8%E5%AD%A3/</link>
+      <pubDate>Wed, 29 May 2024 01:11:42 +0100</pubDate>
+      <guid>http://localhost:1313/2024/%E4%BA%94%E6%9C%88%E9%9D%9E%E6%B4%B2%E7%9A%84%E9%9B%A8%E5%AD%A3/</guid>
+      <description>一眨眼小半年过去了，想记录的事情有很多，博客却一直在欠债，白白流逝却没有留下痕迹的时间让我感受到：没有记录，就不算生活过。 庸人自扰的后悔焦虑</description>
+    </item>
+  </channel>
+</rss>

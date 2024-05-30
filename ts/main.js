@@ -1,5 +1,5 @@
 (() => {
-  // ns-hugo:C:\Users\81968\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!cai!jimmy\hugo-theme-stack\v3@v3.26.0\assets\ts\gallery.ts
+  // ns-hugo:D:\00System\Hugo\GoldMaple\assets\ts\gallery.ts
   var StackGallery = class _StackGallery {
     galleryUID;
     items = [];
@@ -32,7 +32,7 @@
       }
     }
     static createGallery(container) {
-      const images = container.querySelectorAll("img.gallery-image");
+      const images = container.querySelectorAll("img");
       for (const img of Array.from(images)) {
         const paragraph = img.closest("p");
         if (!paragraph || !container.contains(paragraph))
@@ -120,7 +120,7 @@
   };
   var gallery_default = StackGallery;
 
-  // ns-hugo:C:\Users\81968\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!cai!jimmy\hugo-theme-stack\v3@v3.26.0\assets\ts\color.ts
+  // ns-hugo:D:\00System\Hugo\GoldMaple\assets\ts\color.ts
   var colorsCache = {};
   if (localStorage.hasOwnProperty("StackColorsCache")) {
     try {
@@ -153,7 +153,7 @@
     return colorsCache[key];
   }
 
-  // ns-hugo:C:\Users\81968\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!cai!jimmy\hugo-theme-stack\v3@v3.26.0\assets\ts\menu.ts
+  // ns-hugo:D:\00System\Hugo\GoldMaple\assets\ts\menu.ts
   var slideUp = (target, duration = 500) => {
     target.classList.add("transiting");
     target.style.transitionProperty = "height, margin, padding";
@@ -226,7 +226,7 @@
     }
   }
 
-  // ns-hugo:C:\Users\81968\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!cai!jimmy\hugo-theme-stack\v3@v3.26.0\assets\ts\createElement.ts
+  // ns-hugo:D:\00System\Hugo\GoldMaple\assets\ts\createElement.ts
   function createElement(tag, attrs, children) {
     var element = document.createElement(tag);
     for (let name in attrs) {
@@ -253,7 +253,7 @@
   }
   var createElement_default = createElement;
 
-  // ns-hugo:C:\Users\81968\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!cai!jimmy\hugo-theme-stack\v3@v3.26.0\assets\ts\colorScheme.ts
+  // ns-hugo:D:\00System\Hugo\GoldMaple\assets\ts\colorScheme.ts
   var StackColorScheme = class {
     localStorageKey = "StackColorScheme";
     currentScheme;
@@ -321,7 +321,7 @@
   };
   var colorScheme_default = StackColorScheme;
 
-  // ns-hugo:C:\Users\81968\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!cai!jimmy\hugo-theme-stack\v3@v3.26.0\assets\ts\scrollspy.ts
+  // ns-hugo:D:\00System\Hugo\GoldMaple\assets\ts\scrollspy.ts
   function debounced(func) {
     let timeout;
     return () => {
@@ -418,7 +418,7 @@
     window.addEventListener("resize", debounced(resizeHandler));
   }
 
-  // ns-hugo:C:\Users\81968\AppData\Local\hugo_cache\modules\filecache\modules\pkg\mod\github.com\!cai!jimmy\hugo-theme-stack\v3@v3.26.0\assets\ts\smoothAnchors.ts
+  // ns-hugo:D:\00System\Hugo\GoldMaple\assets\ts\smoothAnchors.ts
   var anchorLinksQuery = "a[href]";
   function setupSmoothAnchors() {
     document.querySelectorAll(anchorLinksQuery).forEach((aElement) => {
@@ -428,12 +428,10 @@
       }
       aElement.addEventListener("click", (clickEvent) => {
         clickEvent.preventDefault();
-        const targetId = decodeURI(aElement.getAttribute("href").substring(1)), target = document.getElementById(targetId), offset = target.getBoundingClientRect().top - document.documentElement.getBoundingClientRect().top;
+        let targetId = aElement.getAttribute("href").substring(1);
+        let target = document.querySelector(`#${targetId.replace(":", "\\:")}`);
         window.history.pushState({}, "", aElement.getAttribute("href"));
-        scrollTo({
-          top: offset,
-          behavior: "smooth"
-        });
+        scrollTo({ top: target.offsetTop, behavior: "smooth" });
       });
     });
   }
