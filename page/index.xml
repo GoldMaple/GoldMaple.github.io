@@ -16,11 +16,11 @@
       <description></description>
     </item>
     <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <title>About|我</title>
+      <link>http://localhost:1313/about%E6%88%91/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>小金 我想死，你的声音让我想化成灰。 人是一种生物，我希望自己是枫。 世界公民现驻西非备润 infp/j ┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┄┅</description>
+      <guid>http://localhost:1313/about%E6%88%91/</guid>
+      <description>小金 我想死，你的声音让我想化成灰。 人是一种生物，我希望自己是风。 世界公民现驻西非备润 infp/j ┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┅┄┄┅</description>
     </item>
     <item>
       <title>Search</title>
