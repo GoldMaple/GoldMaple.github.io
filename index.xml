@@ -6,7 +6,7 @@
         <description>Recent content on GoldMaple</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 16 Jun 2024 00:04:23 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 09 Jun 2024 00:04:23 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>一本小说让我来到非洲</title>
         <link>http://localhost:1313/2024/%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4%E8%AE%A9%E6%88%91%E6%9D%A5%E5%88%B0%E9%9D%9E%E6%B4%B2/</link>
         <pubDate>Sun, 09 Jun 2024 00:04:23 +0100</pubDate>
@@ -50,7 +50,7 @@
 &lt;p&gt;同事上前查看，地球仪果然是made in China，但这也是我们第一次看到以非洲为中心的地球仪。&lt;/p&gt;
 &lt;p&gt;我脑海中突然闪过一段小说情节，于是从那以非洲为中心的地图开始，笑着跟同事讲起我如何与非洲结缘。&lt;/p&gt;
 &lt;h2 id=&#34;以非洲为中心的地图&#34;&gt;以非洲为中心的地图&lt;/h2&gt;
-&lt;p&gt;2022年3月，一战梦校失败，我被封控在学校长达三个月，边封控边准备毕业答辩。&lt;/p&gt;
+&lt;p&gt;2022年3月，一战北电失败，我被封控在学校长达三个月，边封控边准备毕业答辩。&lt;/p&gt;
 &lt;p&gt;十几平的房间隔离四个人，饭是馊的，四十天不让洗澡，我和舍友在写论文之余看电影、追剧、看小说，寻找着不让自己崩溃的各种方式。&lt;/p&gt;
 &lt;p&gt;（2022年我被封控了6个月。其中三个月连房间门都不能出，另外三个月不能出小区门。来到非洲之后总有人问我，不觉得闷吗？不觉得孤独吗？不觉得饭不好吃吗？我说不觉得。）&lt;/p&gt;
 &lt;p&gt;偶然之间在微博看到一篇推文，是我一直很喜欢的种田基建类型，于是抱着放松的目的点开这本小说。&lt;/p&gt;
@@ -67,7 +67,7 @@
 &lt;p&gt;在一片赞美惊叹声中，有一句疑问谢双瑶没有理会。&lt;/p&gt;
 &lt;p&gt;“这地图为何是以非洲居中？咱们敏朝的地图怎么也当是亚欧大陆居中吧？”&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;从某种意义上来说，这本小说改变了我的人生。&lt;/p&gt;
+&lt;p&gt;从某种意义上来说，这本小说影响了我的人生。&lt;/p&gt;
 &lt;p&gt;-TBC-&lt;/p&gt;
 &lt;p&gt;封面图来自：&lt;a class=&#34;link&#34; href=&#34;https://www.worldmap1.com/Africa-map.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AFRICA MAP AT NIGHT FROM SPACE&lt;/a&gt;&lt;/p&gt;
@@ -79,9 +79,9 @@
         <pubDate>Thu, 30 May 2024 01:11:42 +0100</pubDate>
         
         <guid>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;h2 id=&#34;删除-related-contents-文章图片的颜色遮盖&#34;&gt;删除 RELATED CONTENTS 文章图片的颜色遮盖&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;2024615&#34;&gt;2024/6/15&lt;/h2&gt;
+&lt;h3 id=&#34;删除-related-contents-文章图片的颜色遮盖&#34;&gt;删除 RELATED CONTENTS 文章图片的颜色遮盖&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;2024/6/15&lt;/li&gt;
 &lt;li&gt;参考
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://yelleis.top/p/61fdb627/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -100,9 +100,8 @@ import StackColorScheme from &#39;ts/colorScheme&#39;;
 import { setupScrollspy } from &#39;ts/scrollspy&#39;;
 import { setupSmoothAnchors } from &amp;quot;ts/smoothAnchors&amp;quot;;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;短代码摘录引用&#34;&gt;短代码：摘录引用&lt;/h2&gt;
+&lt;h3 id=&#34;短代码&#34;&gt;短代码&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;2024/6/15&lt;/li&gt;
 &lt;li&gt;路径：&lt;code&gt;layouts/shortcodes&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;参考
 &lt;ul&gt;
@@ -111,9 +110,8 @@ import { setupSmoothAnchors } from &amp;quot;ts/smoothAnchors&amp;quot;;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;隐藏右侧年份归档目录&#34;&gt;隐藏右侧年份归档目录&lt;/h2&gt;
+&lt;h3 id=&#34;隐藏右侧年份归档目录&#34;&gt;隐藏右侧年份归档目录&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;2024/6/15&lt;/li&gt;
 &lt;li&gt;路径：&lt;code&gt;/config.yaml/&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;将想隐藏的部分添加注释&lt;/li&gt;
 &lt;/ul&gt;
@@ -125,11 +123,8 @@ import { setupSmoothAnchors } from &amp;quot;ts/smoothAnchors&amp;quot;;
             # - archives
             - tag-cloud
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;在主页卡片显示标签&#34;&gt;在主页卡片显示标签&lt;/h2&gt;
+&lt;h3 id=&#34;在主页卡片显示标签&#34;&gt;在主页卡片显示标签&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;2024/6/15&lt;/p&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;路径：&lt;code&gt;layouts\partials\article\components\details.html&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -152,6 +147,8 @@ import { setupSmoothAnchors } from &amp;quot;ts/smoothAnchors&amp;quot;;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;2024617&#34;&gt;2024/6/17&lt;/h2&gt;
+&lt;h3 id=&#34;配置waline评论&#34;&gt;配置Waline评论&lt;/h3&gt;
 </description>
         </item>
         <item>
