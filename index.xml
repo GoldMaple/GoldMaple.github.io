@@ -351,18 +351,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		tabWidth: 4 //代码缩进字符数
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;网站icon和avatar位置&#34;&gt;网站icon和avatar位置&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2021/f9f0ec87/#%E8%B0%83%E6%95%B4%E4%BB%A3%E7%A0%81%E5%9D%97%E6%A0%B7%E5%BC%8F&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo | 看中 Stack 主题的归档功能，搬家并做修改 | 小球飞鱼&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;位置：&lt;code&gt;\config.yaml&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;操作：
-&lt;ul&gt;
-&lt;li&gt;将 Icon 命名为&lt;code&gt;favicon.png&lt;/code&gt;，在根目录的&lt;code&gt;static&lt;/code&gt;文件夹下新建&lt;code&gt;img&lt;/code&gt;文件夹并放入其中&lt;/li&gt;
-&lt;li&gt;在&lt;code&gt;config.yaml&lt;/code&gt;修改favicon参数为&lt;code&gt;/img/favicon.png&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/div&gt;&lt;h3 id=&#34;添加友链&#34;&gt;添加友链&lt;/h3&gt;
 </description>
         </item>
         <item>
