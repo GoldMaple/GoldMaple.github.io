@@ -427,7 +427,7 @@
         
         
             <div class="article-image">
-                <img src="/2024/%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4%E8%AE%A9%E6%88%91%E6%9D%A5%E5%88%B0%E9%9D%9E%E6%B4%B2/_hu08b2751e14dd402006a89014de4713c7_83250_6eb03a2e40c475dc4379638e3a26bc9b.jpg" 
+                <img src="/2024/%E4%B8%80%E6%9C%AC%E5%B0%8F%E8%AF%B4%E8%AE%A9%E6%88%91%E6%9D%A5%E5%88%B0%E9%9D%9E%E6%B4%B2/cover2.5e5cbe5afa61b6a6e80ba1dd18f773cb_hu08b2751e14dd402006a89014de4713c7_83250_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -452,46 +452,21 @@
      
      
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
-<script>
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "stack" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
 <style>
-    .disqus-container {
+    .waline-container {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
         padding: var(--card-padding);
     }
-</style>
-
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (DISQUS) {
-            DISQUS.reset({
-                reload: true
-            });
-        }
-    })
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://goldmaple-waline-l622y2nmc-goldmaples-projects.vercel.app/"});
 </script>
 
     
@@ -535,7 +510,7 @@
             2023 - 
         
         2024 <a href="https://stack-theme-mod.vercel.app/">Example Site</a>·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
-      共书写了5k字·共 5篇文章</br><span><p>
+      共书写了6.6k字·共 5篇文章</br><span><p>
     </section>
     
     <section class="powerby">
