@@ -23,18 +23,18 @@
       <description>📖“这地图为何是以非洲居中？咱们敏朝的地图怎么也当是亚欧大陆居中吧？” 御井烹香 《买活》 我跟同事在当地的一家中型超市排队结账，前面一家当地中产</description>
     </item>
     <item>
-      <title>Hugo建站应当有个记录</title>
-      <link>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Thu, 30 May 2024 01:11:42 +0100</pubDate>
-      <guid>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</guid>
-      <description>2024/6/15 删除 RELATED CONTENTS 文章图片的颜色遮盖 参考 hugo stack 主题美化 (yelleis.top) 如何取消Archive页面中对Categories图片的颜色修正 · Issue #364 · CaiJimmy/hugo-theme-stack · GitHub 操作：将/ass</description>
-    </item>
-    <item>
       <title>五月：非洲的雨季</title>
       <link>http://localhost:1313/2024/%E4%BA%94%E6%9C%88%E9%9D%9E%E6%B4%B2%E7%9A%84%E9%9B%A8%E5%AD%A3/</link>
       <pubDate>Wed, 29 May 2024 01:11:42 +0100</pubDate>
       <guid>http://localhost:1313/2024/%E4%BA%94%E6%9C%88%E9%9D%9E%E6%B4%B2%E7%9A%84%E9%9B%A8%E5%AD%A3/</guid>
       <description>一眨眼小半年过去了，想记录的事情有很多，博客却一直在欠债，白白流逝却没有留下痕迹的时间让我感受到：没有记录，就不算生活过。 庸人自扰的后悔焦虑</description>
+    </item>
+    <item>
+      <title>Hugo建站应当有个记录</title>
+      <link>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 19 Apr 2024 01:11:42 +0100</pubDate>
+      <guid>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</guid>
+      <description>2024/5/19 建站 在我刚开始尝试建立博客的一个月，可以说是ʚ✞大失败✞ɞ 先是忘记安装golang博客永远无法渲染成功，再是好不容易使用stack-qui</description>
     </item>
     <item>
       <title>二十三岁的新年</title>

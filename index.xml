@@ -53,10 +53,10 @@
 &lt;p&gt;来到非洲工作后逐渐发现，过于封闭的社交圈让许多人对八卦趋之若鹜，我也不自觉从众。&lt;/p&gt;
 &lt;p&gt;话语实在是太浅薄太冲动，于是尝试用文字尽量客观地记录见闻，不演绎情节，不评判好恶。&lt;/p&gt;
 &lt;p&gt;「萬物皆有靈，只是我太空虛」&lt;/p&gt;
-&lt;p&gt;在采风时的对外观察中丰盈内心，能否填补空虚躁动的内心；在缓慢的书写中温和记录，能否体现对万物的无言尊重。&lt;/p&gt;
+&lt;p&gt;在采风时的对外观察中丰盈思想，能否填补空虚躁动的内心；在缓慢的书写中温和记录，能否体现对万物的无言尊重。&lt;/p&gt;
 &lt;p&gt;每个人都是一个宇宙。&lt;/p&gt;
 &lt;h2 id=&#34;带上她的眼睛&#34;&gt;带上她的眼睛&lt;/h2&gt;
-&lt;p&gt;写了这么久终于回收标题了（A人叹气），之所以想到这个标题，是因为给朋友分享见闻时她对我说的一句话。&lt;/p&gt;
+&lt;p&gt;写了这么久终于回收标题了（A人叹气），之所以想到这个标题，是因为给朋友🌙分享见闻时她对我说的一句话。&lt;/p&gt;
 &lt;figure&gt;&lt;img src=&#34;http://localhost:1313/2024/%E5%B8%A6%E4%B8%8A%E5%A5%B9%E7%9A%84%E7%9C%BC%E7%9D%9B/withhereyes.jpg&#34; width=&#34;40%&#34;&gt;
 &lt;/figure&gt;
 
@@ -144,88 +144,6 @@
 </description>
         </item>
         <item>
-        <title>Hugo建站应当有个记录</title>
-        <link>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</link>
-        <pubDate>Thu, 30 May 2024 01:11:42 +0100</pubDate>
-        
-        <guid>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;h2 id=&#34;2024615&#34;&gt;2024/6/15&lt;/h2&gt;
-&lt;h3 id=&#34;删除-related-contents-文章图片的颜色遮盖&#34;&gt;删除 RELATED CONTENTS 文章图片的颜色遮盖&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;参考
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://yelleis.top/p/61fdb627/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo stack 主题美化 (yelleis.top)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/364&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;如何取消Archive页面中对Categories图片的颜色修正 · Issue #364 · CaiJimmy/hugo-theme-stack · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;操作：将&lt;code&gt;/assets/ts/main.ts&lt;/code&gt;里第九行给注释掉&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;import StackGallery from &amp;quot;ts/gallery&amp;quot;;
-// import { getColor } from &#39;ts/color&#39;;   ←
-import menu from &#39;ts/menu&#39;;
-import createElement from &#39;ts/createElement&#39;;
-import StackColorScheme from &#39;ts/colorScheme&#39;;
-import { setupScrollspy } from &#39;ts/scrollspy&#39;;
-import { setupSmoothAnchors } from &amp;quot;ts/smoothAnchors&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;短代码&#34;&gt;短代码&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;路径：&lt;code&gt;layouts/shortcodes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;参考
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E6%91%98%E5%BD%95%E5%BC%95%E7%94%A8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo | 在 Stack 主题上可行的短代码们 (sleepymoon.cyou)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;隐藏右侧年份归档目录&#34;&gt;隐藏右侧年份归档目录&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;路径：&lt;code&gt;/config.yaml/&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;将想隐藏的部分添加注释&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;    widgets:
-        enabled:
-            - search
-            - toc
-            - categories
-            # - archives
-            - tag-cloud
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;在主页卡片显示标签&#34;&gt;在主页卡片显示标签&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;路径：&lt;code&gt;layouts\partials\article\components\details.html&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;挑选喜欢的位置插入tags&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;想美化格式直接问chatgpt&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  {{ if .Params.tags }}
-  &amp;lt;div&amp;gt;
-      &amp;lt;div class=&amp;quot;article-tags&amp;quot;&amp;gt;
-          {{ range (.GetTerms &amp;quot;tags&amp;quot;) }}
-              &amp;lt;a href=&amp;quot;{{ .RelPermalink }}&amp;quot; style=&amp;quot;border-radius: 50px;padding: 2px 8px; display: inline-block;margin-right: 5px; margin-bottom: 5px; border: 1px solid;&amp;quot;&amp;gt;
-                  #{{ .LinkTitle }}
-              &amp;lt;/a&amp;gt;
-          {{ end }}
-      &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
- {{ end }}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2024617&#34;&gt;2024/6/17&lt;/h2&gt;
-&lt;h3 id=&#34;配置waline评论&#34;&gt;配置Waline评论&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://limuran.top/p/hugo-stack%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0waline%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo Stack主题博客添加Waline评论系统&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
         <title>五月：非洲的雨季</title>
         <link>http://localhost:1313/2024/%E4%BA%94%E6%9C%88%E9%9D%9E%E6%B4%B2%E7%9A%84%E9%9B%A8%E5%AD%A3/</link>
         <pubDate>Wed, 29 May 2024 01:11:42 +0100</pubDate>
@@ -269,6 +187,182 @@ import { setupSmoothAnchors } from &amp;quot;ts/smoothAnchors&amp;quot;;
 &lt;p&gt;为了防虫，我安装了一个坚固结实的星空图案的蚊帐，时常感觉这是我的安全屋，我的星空小船🌌&lt;/p&gt;
 &lt;p&gt;下雨的日子，我听着地动山摇的雨声安睡。没雨的日子，我也会播放雨声助眠🌧️&lt;/p&gt;
 &lt;p&gt;在雨声中，我会感觉在一望无际的海面上，在漆黑的海面上，在风雨飘摇的海面上，我有一篷不会沉没的星空小船⛵&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hugo建站应当有个记录</title>
+        <link>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Fri, 19 Apr 2024 01:11:42 +0100</pubDate>
+        
+        <guid>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;h2 id=&#34;2024519&#34;&gt;2024/5/19&lt;/h2&gt;
+&lt;h3 id=&#34;建站&#34;&gt;建站&lt;/h3&gt;
+&lt;p&gt;在我刚开始尝试建立博客的一个月，可以说是ʚ✞大失败✞ɞ&lt;/p&gt;
+&lt;p&gt;先是忘记安装golang博客永远无法渲染成功，再是好不容易使用stack-quick-start建站成功，才发现使用这个模板建成的博客结构和网上教程的完全不同，很多东西无法参考。&lt;/p&gt;
+&lt;p&gt;工作之余断断续续折腾了一个月。意外间发现了小球飞鱼老师分享的stack模板，靠着之前踩坑的经验教训，一次配置成功了！感谢！&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2022/stack-theme-mod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | Hugo-stack-theme 主题魔改版 | 小球飞鱼&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2024615&#34;&gt;2024/6/15&lt;/h2&gt;
+&lt;h3 id=&#34;删除-related-contents-文章图片的颜色遮盖&#34;&gt;删除 RELATED CONTENTS 文章图片的颜色遮盖&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;参考
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://yelleis.top/p/61fdb627/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo stack 主题美化 (yelleis.top)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/364&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;如何取消Archive页面中对Categories图片的颜色修正 · Issue #364 · CaiJimmy/hugo-theme-stack · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;操作：将&lt;code&gt;/assets/ts/main.ts&lt;/code&gt;里第九行给注释掉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ts&#34; data-lang=&#34;ts&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;StackGallery&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ts/gallery&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// import { getColor } from &amp;#39;ts/color&amp;#39;;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ts/menu&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createElement&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ts/createElement&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;StackColorScheme&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ts/colorScheme&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;setupScrollspy&lt;/span&gt; } &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ts/scrollspy&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;setupSmoothAnchors&lt;/span&gt; } &lt;span style=&#34;color:#66d9ef&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ts/smoothAnchors&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;短代码&#34;&gt;短代码&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;路径：&lt;code&gt;layouts/shortcodes&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;参考
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E6%91%98%E5%BD%95%E5%BC%95%E7%94%A8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 在 Stack 主题上可行的短代码们 (sleepymoon.cyou)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;隐藏右侧年份归档目录&#34;&gt;隐藏右侧年份归档目录&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;路径：&lt;code&gt;/config.yaml/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将想隐藏的部分添加注释&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;widgets&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;enabled&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            - &lt;span style=&#34;color:#ae81ff&#34;&gt;search&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            - &lt;span style=&#34;color:#ae81ff&#34;&gt;toc&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            - &lt;span style=&#34;color:#ae81ff&#34;&gt;categories&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#75715e&#34;&gt;# - archives&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            - &lt;span style=&#34;color:#ae81ff&#34;&gt;tag-cloud&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;在主页卡片显示标签&#34;&gt;在主页卡片显示标签&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;路径：&lt;code&gt;layouts\partials\article\components\details.html&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;挑选喜欢的位置插入tags&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;想美化格式直接问chatgpt&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  {{ if .Params.tags }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;article-tags&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          {{ range (.GetTerms &amp;#34;tags&amp;#34;) }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;border-radius: 50px;padding: 2px 8px; display: inline-block;margin-right: 5px; margin-bottom: 5px; border: 1px solid;&amp;#34;&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  #{{ .LinkTitle }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; {{ end }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024617&#34;&gt;2024/6/17&lt;/h2&gt;
+&lt;h3 id=&#34;配置waline评论&#34;&gt;配置Waline评论&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://limuran.top/p/hugo-stack%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0waline%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Stack主题博客添加Waline评论系统&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2024618&#34;&gt;2024/6/18&lt;/h2&gt;
+&lt;h3 id=&#34;调整代码块样式&#34;&gt;调整代码块样式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2021/f9f0ec87/#%E8%B0%83%E6%95%B4%E4%BB%A3%E7%A0%81%E5%9D%97%E6%A0%B7%E5%BC%8F&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 看中 Stack 主题的归档功能，搬家并做修改 | 小球飞鱼&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;路径：&lt;code&gt;\config.yaml&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;markup:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	highlight:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		codeFences: true //代码围栏功能，一般设为true
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		guessSyntax: true //猜测语法，设置为true后自动匹配可能的语法
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		hl_Lines: &amp;#34;&amp;#34; //从第几行开始高亮，一般不设置
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		lineNoStart: 1 //行号从编号几开始显示
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		lineNos: ture //是否显示行号
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		lineNumbersInTable: true //是否使用表来格式化行号和代码，一般设为true，设置true后页面的代码框就不再接连整个文章页面了，但是copy模块会只会复制行号，不知道为什么
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		noClasses: true //使用class标签，设为false后代码框背景消失
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		style: native //样式风格
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		tabWidth: 4 //代码缩进字符数
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;网站icon和avatar位置&#34;&gt;网站icon和avatar位置&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;参考：&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2021/f9f0ec87/#%E8%B0%83%E6%95%B4%E4%BB%A3%E7%A0%81%E5%9D%97%E6%A0%B7%E5%BC%8F&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 看中 Stack 主题的归档功能，搬家并做修改 | 小球飞鱼&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;位置：&lt;code&gt;\config.yaml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;操作：
+&lt;ul&gt;
+&lt;li&gt;将 Icon 命名为&lt;code&gt;favicon.png&lt;/code&gt;，在根目录的&lt;code&gt;static&lt;/code&gt;文件夹下新建&lt;code&gt;img&lt;/code&gt;文件夹并放入其中&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;config.yaml&lt;/code&gt;修改favicon参数为&lt;code&gt;/img/favicon.png&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
