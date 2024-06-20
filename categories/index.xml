@@ -29,5 +29,12 @@
       <guid>http://localhost:1313/categories/%E6%80%A5%E5%B0%B1%E7%AB%A0/</guid>
       <description>Badge style // style: // background: &amp;ldquo;#2a9d8f&amp;rdquo; // color: &amp;ldquo;#fff&amp;rdquo;</description>
     </item>
+    <item>
+      <title>技术力</title>
+      <link>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%8A%9B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%8A%9B/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
