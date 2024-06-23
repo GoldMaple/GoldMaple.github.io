@@ -381,6 +381,11 @@
 &lt;li&gt;参考鸣谢：&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2022/stack-theme-mod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo | Hugo-stack-theme 主题魔改版 | 小球飞鱼&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;在hugo-stack博客的配置和装修过程中，kyo老师的教程详细全面，实在是小白前进路上的引路人&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参考鸣谢：&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;第三夏尔 | Third Shire&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;2024615&#34;&gt;2024/6/15&lt;/h2&gt;
 &lt;h3 id=&#34;删除-related-contents-文章图片的颜色遮盖&#34;&gt;删除 RELATED CONTENTS 文章图片的颜色遮盖&lt;/h3&gt;
 &lt;ul&gt;
@@ -544,7 +549,8 @@
 &lt;/li&gt;
 &lt;li&gt;域名网站：https://www.namesilo.com/&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2024623-更改文章和目录网址&#34;&gt;2024/6/23 更改文章和目录网址&lt;/h2&gt;
+&lt;h2 id=&#34;2024623&#34;&gt;2024/6/23&lt;/h2&gt;
+&lt;h3 id=&#34;更改文章和目录网址&#34;&gt;更改文章和目录网址&lt;/h3&gt;
 &lt;p&gt;分享博文的链接太不简洁&lt;/p&gt;
 &lt;p&gt;我的hugo设置的是英文版，但是目录是中文，不知道是不是因为这个原因总是出错，总之一起修改成英文的&lt;/p&gt;
 &lt;p&gt;操作：&lt;/p&gt;
@@ -584,7 +590,9 @@
 &lt;blockquote&gt;
 &lt;p&gt;在Hugo的首页上，如果分类（categories）显示的是slug而不是title，可以通过自定义模板来解决这个问题。你需要修改Hugo的模板文件，以确保在显示分类时使用分类的title而不是slug。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;操作:将&lt;code&gt;/layouts/partials/widget/categories.html&lt;/code&gt;的代码修改为&lt;/p&gt;
+&lt;p&gt;操作：将&lt;code&gt;/layouts/partials/widget/categories.html&lt;/code&gt;的修改为&lt;/p&gt;
+&lt;details&gt;
+      &lt;summary&gt;代码&lt;/summary&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
@@ -651,6 +659,31 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{- else -}}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {{- warnf &amp;#34;Archives page not found. Create a page with layout: archives.&amp;#34; -}}
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{- end -}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;h3 id=&#34;内容折叠&#34;&gt;内容折叠&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;参考鸣谢：&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/hugo-stack-renovation/#%E5%AE%9E%E7%8E%B0%E5%86%85%E5%AE%B9%E6%8A%98%E5%8F%A0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Stack主题装修笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;网址：&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/71691219/add-collapsible-section-in-hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stackoverflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;details&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;summary&lt;/span&gt;&amp;gt;Click to expand!&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;summary&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     Hidden explanation
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;details&lt;/span&gt;&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
