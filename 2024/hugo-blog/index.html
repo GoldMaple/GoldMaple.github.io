@@ -271,7 +271,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%8A%9B/" >
+            <a href="/categories/geek/" >
                 技术力
             </a>
         
@@ -328,7 +328,7 @@
 
 
                 <time class="article-words">
-                    1040字
+                    1610字
                 </time>
             </div>
         
@@ -512,7 +512,116 @@
 </li>
 <li>域名网站：https://www.namesilo.com/</li>
 </ul>
-
+<h2 id="2024623-更改文章和目录网址">2024/6/23 更改文章和目录网址</h2>
+<p>分享博文的链接太不简洁</p>
+<p>我的hugo设置的是英文版，但是目录是中文，不知道是不是因为这个原因总是出错，总之一起修改成英文的</p>
+<p>操作：</p>
+<p>1）在<code>/config.yaml</code>中增加categories行</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">permalinks</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">post</span>: <span style="color:#ae81ff">/:year/:slug/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">page</span>: <span style="color:#ae81ff">/:slug/</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">categories</span>: <span style="color:#ae81ff">/categories/:slug/</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2）<code>/content/categories/</code>中更改目录的文件夹名为英语</p>
+<p>3） <code>_index.md</code>文件表头添加slug以及想显示的文件夹名title</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#ae81ff">技术力</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">slug</span>: <span style="color:#ae81ff">geek</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">description</span>: 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">image</span>: <span style="color:#ae81ff">cover.jpg</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>4）修改每篇博文表头目录为英文
+这时发现虽然索引跳转正确，但是右侧widget的categories显示的是英文的目录，问了下Chatgpt</p>
+<blockquote>
+<p>在Hugo的首页上，如果分类（categories）显示的是slug而不是title，可以通过自定义模板来解决这个问题。你需要修改Hugo的模板文件，以确保在显示分类时使用分类的title而不是slug。</p>
+</blockquote>
+<p>操作:将<code>/layouts/partials/widget/categories.html</code>的代码修改为</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{- $query := first 1 (where .Site.Pages &#34;Layout&#34; &#34;==&#34; &#34;archives&#34;) -}}
+</span></span><span style="display:flex;"><span>{{- if $query -}}
+</span></span><span style="display:flex;"><span>    {{- $archivesPage := index $query 0 -}}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;widget categories&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;widget-icon&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            {{ partial &#34;helper/icon&#34; &#34;infinity&#34; }}  
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt; 
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;widget-title section-title&#34;</span>&gt;Categories&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;widget-categories--list&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;widget&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h3</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;widget-title&#34;</span>&gt; {{ T &#34;widget_categories&#34; }}&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;widget-body&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;category-list&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            {{- range $name, $taxonomy := $.Site.Taxonomies.categories }}
+</span></span><span style="display:flex;"><span>            {{- with $.Site.GetPage (printf &#34;/categories/%s&#34; $name) }}
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;category-list-item&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;category-list-link&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    {{ .Title }} <span style="color:#75715e">&lt;!-- 使用分类页面的标题 --&gt;</span>
+</span></span><span style="display:flex;"><span>                    &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;category-list-count&#34;</span>&gt;{{ $taxonomy.Count }}&lt;/<span style="color:#f92672">span</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>            {{- end }}
+</span></span><span style="display:flex;"><span>            {{- end }}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">section</span>&gt;
+</span></span><span style="display:flex;"><span>{{- else -}}
+</span></span><span style="display:flex;"><span>    {{- warnf &#34;Archives page not found. Create a page with layout: archives.&#34; -}}
+</span></span><span style="display:flex;"><span>{{- end -}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -626,7 +735,7 @@
             2023 - 
         
         2024 <a href="https://stack-theme-mod.vercel.app/">Example Site</a>·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>
-      共书写了10.8k字·共 7篇文章</br><span><p>
+      共书写了11.4k字·共 7篇文章</br><span><p>
     </section>
     
     <section class="powerby">
@@ -795,6 +904,7 @@ document.getElementById('days').innerHTML = number_of_days;
         <li><a href="#waline留言显示failed-to-fetch购买并配置域名">Waline留言显示Failed to fetch，购买并配置域名</a></li>
       </ol>
     </li>
+    <li><a href="#2024623-更改文章和目录网址">2024/6/23 更改文章和目录网址</a></li>
   </ol>
 </nav>
         </div>
@@ -817,16 +927,30 @@ document.getElementById('days').innerHTML = number_of_days;
     <h3 class="widget-title"> </h3>
     <div class="widget-body">
         <div class="category-list">
-            <div class="category-list-item"><a href="http://localhost:1313/categories/thinking/" class="category-list-link">thinking<span class="category-list-count">1</a>
-            </span></div>
-            <div class="category-list-item"><a href="http://localhost:1313/categories/%E4%BA%BA%E9%97%B4%E4%BA%8B/" class="category-list-link">人间事<span class="category-list-count">2</a>
-            </span></div>
-            <div class="category-list-item"><a href="http://localhost:1313/categories/%E6%80%A5%E5%B0%B1%E7%AB%A0/" class="category-list-link">急就章<span class="category-list-count">1</a>
-            </span></div>
-            <div class="category-list-item"><a href="http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%8A%9B/" class="category-list-link">技术力<span class="category-list-count">2</a>
-            </span></div>
-            <div class="category-list-item"><a href="http://localhost:1313/categories/%E6%B5%81%E6%B0%B4%E8%B4%A6/" class="category-list-link">流水账<span class="category-list-count">1</a>
-            </span></div>
+            <div class="category-list-item">
+                <a href="http://localhost:1313/categories/geek/" class="category-list-link">
+                    技术力 
+                    <span class="category-list-count">2</span>
+                </a>
+            </div>
+            <div class="category-list-item">
+                <a href="http://localhost:1313/categories/monthly/" class="category-list-link">
+                    流水账 
+                    <span class="category-list-count">1</span>
+                </a>
+            </div>
+            <div class="category-list-item">
+                <a href="http://localhost:1313/categories/record/" class="category-list-link">
+                    人间事 
+                    <span class="category-list-count">2</span>
+                </a>
+            </div>
+            <div class="category-list-item">
+                <a href="http://localhost:1313/categories/thinking/" class="category-list-link">
+                    急就章 
+                    <span class="category-list-count">2</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
