@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo建站应当有个记录</title>
-      <link>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</link>
+      <link>http://localhost:1313/2024/hugo-blog/</link>
       <pubDate>Fri, 19 Apr 2024 01:11:42 +0100</pubDate>
-      <guid>http://localhost:1313/2024/hugo%E5%BB%BA%E7%AB%99%E5%BA%94%E5%BD%93%E6%9C%89%E4%B8%AA%E8%AE%B0%E5%BD%95/</guid>
+      <guid>http://localhost:1313/2024/hugo-blog/</guid>
       <description>2024/5/19 建站 在我刚开始尝试建立博客的一个月，可以说是ʚ✞大失败✞ɞ 先是忘记安装golang博客永远无法渲染成功，再是好不容易使用stack-qui</description>
     </item>
   </channel>
