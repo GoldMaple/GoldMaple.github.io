@@ -5,19 +5,22 @@
     <loc>http://localhost:1313/2024/with-her-eyes/</loc>
     <lastmod>2024-06-17T00:04:23+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-12-27T04:30:42+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-27T11:50:42+01:00</lastmod>
+    <lastmod>2024-12-27T04:30:42+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-12-27T11:50:42+01:00</lastmod>
+    <lastmod>2024-12-27T04:30:42+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-08-01T19:30:42+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/2024/july/</loc>
-    <lastmod>2024-08-01T19:30:42+01:00</lastmod>
+    <loc>http://localhost:1313/2024/sep/</loc>
+    <lastmod>2024-12-27T04:30:42+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/monthly/</loc>
+    <lastmod>2024-12-27T04:30:42+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/2024/july/</loc>
     <lastmod>2024-08-01T19:30:42+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
