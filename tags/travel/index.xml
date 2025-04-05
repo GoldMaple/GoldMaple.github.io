@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travel on GoldMaple</title>
+    <link>http://localhost:1313/tags/travel/</link>
+    <description>Recent content in Travel on GoldMaple</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Mar 2025 00:30:42 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关西是绿色的</title>
+      <link>http://localhost:1313/2025/kyoto/</link>
+      <pubDate>Thu, 13 Mar 2025 00:30:42 +0100</pubDate>
+      <guid>http://localhost:1313/2025/kyoto/</guid>
+      <description>不知不觉距离关西游竟然已经过去了半年多了，我曾经很多次想鸽掉这篇游记🥹可是一些珍贵的记忆片段持续地在脑海中闪闪发光，让我没办法就这样遗弃。 我</description>
+    </item>
+    <item>
+      <title>九月 | 机场</title>
+      <link>http://localhost:1313/2024/sep/</link>
+      <pubDate>Fri, 27 Dec 2024 04:30:42 +0100</pubDate>
+      <guid>http://localhost:1313/2024/sep/</guid>
+      <description>终于在十二月有时间动笔，并在圣诞节的假期里熬夜写完了九月的月记博客。 坚持写作对我来说绝非易事，繁杂的工作、考证、社交、锻炼、学语言&amp;hell</description>
+    </item>
+  </channel>
+</rss>
